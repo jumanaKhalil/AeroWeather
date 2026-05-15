@@ -39,7 +39,7 @@ function App() {
       setWeather(null);
 
       const response = await fetch(
-        `http://127.0.0.1:8000/weather?city=${encodeURIComponent(trimmedCity)}`
+        `https://aeroweather.onrender.com/weather?city=${encodeURIComponent(trimmedCity)}`
       );
 
       const data = await response.json();
